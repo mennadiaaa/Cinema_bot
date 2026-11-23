@@ -21,6 +21,8 @@ HEADERS = {
         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     ),
     "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Referer": "https://egy.voxcinemas.com/",
 }
 
 IGNORE_SLUGS = {"", "whatson", "comingsoon", "movies", "advance-booking"}
@@ -39,7 +41,15 @@ def send(text):
 def fetch_movies():
     movies = {}
     for page in PAGES:
-        r = requests.get(page, timeout=20, headers=HEADERS)
+        r = None
+        for attempt in range(3):
+            try:
+                r = requests.get(page, timeout=(10, 25), headers=HEADERS)
+                break
+            except requests.RequestException as e:
+                print(f"Attempt {attempt + 1} failed: {e}")
+        if r is None:
+            raise RuntimeError("All 3 attempts to reach VOX failed")
         print(page, "->", r.status_code)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
