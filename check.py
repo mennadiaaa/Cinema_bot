@@ -2,6 +2,7 @@ import json
 import os
 import re
 import sys
+import time
 from urllib.parse import urljoin
 
 import requests
@@ -32,14 +33,29 @@ HEADERS = {
 
 
 def send(text):
-    r = requests.post(
-        f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-        data={"chat_id": CHAT_ID, "text": text},
-        timeout=20,
-    )
-    if not r.ok:
+    for attempt in range(4):
+        try:
+            r = requests.post(
+                f"https://api.telegram.org/bot{TOKEN}/sendMessage",
+                data={"chat_id": CHAT_ID, "text": text},
+                timeout=(10, 30),
+            )
+        except requests.RequestException as e:
+            print(f"Telegram attempt {attempt + 1} failed: {e}")
+            time.sleep(3)
+            continue
+        if r.ok:
+            return True
         print("Telegram error:", r.status_code, r.text)
-    return r.ok
+        if r.status_code == 429:
+            try:
+                wait = r.json().get("parameters", {}).get("retry_after", 10)
+            except Exception:
+                wait = 10
+            time.sleep(min(int(wait) + 1, 60))
+            continue
+        return False  # e.g. 401 bad token / 400 bad chat id: retrying won't help
+    return False
 
 
 def fetch_branch(label, page):
