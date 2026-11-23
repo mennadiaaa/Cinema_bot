@@ -7,9 +7,13 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-BASE = "https://egy.voxcinemas.com"
-# "Now showing" = bookable movies. Add "/movies/comingsoon" to also get announcements.
-PAGES = [BASE + "/movies/whatson"]
+# Branch pages. Each lists "Now Showing" + "Advanced Booking" movies.
+BRANCHES = {
+    "Cairo Festival City": "https://cfc.scenecinemas.com/home",
+    "District 5": "https://district5.scenecinemas.com/home",
+}
+# To also get "Coming Soon" announcements, add e.g.:
+# "CFC Coming Soon": "https://cfc.scenecinemas.com/next_releasing",
 
 TOKEN = os.environ["TOKEN"]
 CHAT_ID = os.environ["CHAT_ID"]
@@ -22,51 +26,45 @@ HEADERS = {
     ),
     "Accept-Language": "en-US,en;q=0.9",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Referer": "https://egy.voxcinemas.com/",
 }
-
-IGNORE_SLUGS = {"", "whatson", "comingsoon", "movies", "advance-booking"}
 
 
 def send(text):
     r = requests.post(
         f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-        data={"chat_id": CHAT_ID, "text": text, "disable_web_page_preview": "false"},
+        data={"chat_id": CHAT_ID, "text": text},
         timeout=20,
     )
     if not r.ok:
         print("Telegram error:", r.status_code, r.text)
 
 
-def fetch_movies():
+def fetch_branch(label, page):
+    r = None
+    for attempt in range(3):
+        try:
+            r = requests.get(page, timeout=(10, 25), headers=HEADERS)
+            break
+        except requests.RequestException as e:
+            print(f"[{label}] attempt {attempt + 1} failed: {e}")
+    if r is None:
+        raise RuntimeError(f"Could not reach {page}")
+    print(label, "->", r.status_code)
+    r.raise_for_status()
+
+    soup = BeautifulSoup(r.text, "html.parser")
     movies = {}
-    for page in PAGES:
-        r = None
-        for attempt in range(3):
-            try:
-                r = requests.get(page, timeout=(10, 25), headers=HEADERS)
-                break
-            except requests.RequestException as e:
-                print(f"Attempt {attempt + 1} failed: {e}")
-        if r is None:
-            raise RuntimeError("All 3 attempts to reach VOX failed")
-        print(page, "->", r.status_code)
-        r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-        for a in soup.select('a[href*="/movies/"]'):
-            href = a.get("href", "").split("?")[0].split("#")[0]
-            if not re.search(r"/movies/[^/]+/?$", href):
-                continue
-            slug = href.rstrip("/").split("/")[-1]
-            if slug in IGNORE_SLUGS:
-                continue
-            url = urljoin(BASE, href)
-            img = a.find("img")
-            alt = (img.get("alt") or "") if img else ""
-            if alt.startswith("Movie poster for "):
-                movies[url] = alt[len("Movie poster for "):]
-            elif url not in movies:
-                movies[url] = slug.replace("-", " ").title()
+    for a in soup.select('a[href*="/movie-details/"]'):
+        href = a.get("href", "").split("?")[0].split("#")[0]
+        if not re.search(r"/movie-details/[^/]+\.html$", href):
+            continue
+        url = urljoin(page, href)
+        slug = href.rstrip("/").split("/")[-1].replace(".html", "")
+        title = a.get("title") or ""
+        if title:
+            movies[url] = title
+        elif url not in movies:
+            movies[url] = slug.replace("-", " ").replace("_", " ").title()
     return movies
 
 
@@ -79,30 +77,34 @@ def load_seen():
 
 
 def main():
-    try:
-        movies = fetch_movies()
-    except Exception as e:
-        print("Fetch failed:", e)
-        sys.exit(1)
+    all_movies = {}  # url -> (name, branch)
+    errors = 0
+    for label, page in BRANCHES.items():
+        try:
+            for url, name in fetch_branch(label, page).items():
+                all_movies[url] = (name, label)
+        except Exception as e:
+            errors += 1
+            print(f"[{label}] failed: {e}")
 
-    if not movies:
-        print("No movies found - page layout may have changed or the site blocked us.")
+    if not all_movies:
+        print("No movies found from any branch.")
         sys.exit(1)
 
     seen = load_seen()
     first_run = len(seen) == 0
-    new = {u: n for u, n in movies.items() if u not in seen}
+    new = {u: v for u, v in all_movies.items() if u not in seen}
 
     if first_run:
-        send(f"✅ Cinema bot is running. Tracking {len(movies)} movies on VOX Egypt. "
-             "You'll be notified when a new one appears.")
+        send(f"✅ Cinema bot is running. Tracking {len(all_movies)} listings on Scene Cinemas. "
+             "You'll be notified when a new movie appears.")
     else:
-        for url, name in new.items():
-            send(f"🎬 New movie on VOX Egypt: {name}\n{url}")
+        for url, (name, branch) in new.items():
+            send(f"🎬 New at Scene Cinemas ({branch}): {name}\n{url}")
 
-    print(f"Found {len(movies)} movies, {len(new)} new.")
+    print(f"Found {len(all_movies)} listings, {len(new)} new.")
     with open(FILE, "w") as f:
-        json.dump(sorted(seen | set(movies)), f, indent=2)
+        json.dump(sorted(seen | set(all_movies)), f, indent=2)
 
 
 if __name__ == "__main__":
