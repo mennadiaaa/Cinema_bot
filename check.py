@@ -15,8 +15,10 @@ BRANCHES = {
 # To also get "Coming Soon" announcements, add e.g.:
 # "CFC Coming Soon": "https://cfc.scenecinemas.com/next_releasing",
 
-TOKEN = os.environ["TOKEN"]
-CHAT_ID = os.environ["CHAT_ID"]
+TOKEN = os.environ["TOKEN"].strip()
+CHAT_ID = os.environ["CHAT_ID"].strip()
+# Diagnostics (lengths only). Expected: token 46 characters, chat id 10.
+print("TOKEN length:", len(TOKEN), "| CHAT_ID length:", len(CHAT_ID))
 FILE = "seen.json"
 
 HEADERS = {
@@ -37,6 +39,7 @@ def send(text):
     )
     if not r.ok:
         print("Telegram error:", r.status_code, r.text)
+    return r.ok
 
 
 def fetch_branch(label, page):
@@ -95,16 +98,23 @@ def main():
     first_run = len(seen) == 0
     new = {u: v for u, v in all_movies.items() if u not in seen}
 
+    failed = set()
     if first_run:
-        send(f"✅ Cinema bot is running. Tracking {len(all_movies)} listings on Scene Cinemas. "
-             "You'll be notified when a new movie appears.")
+        ok = send(f"✅ Cinema bot is running. Tracking {len(all_movies)} listings on Scene Cinemas. "
+                  "You'll be notified when a new movie appears.")
+        if not ok:
+            print("Telegram send failed - not saving seen.json so nothing is lost.")
+            sys.exit(1)
     else:
         for url, (name, branch) in new.items():
-            send(f"🎬 New at Scene Cinemas ({branch}): {name}\n{url}")
+            if not send(f"🎬 New at Scene Cinemas ({branch}): {name}\n{url}"):
+                failed.add(url)
 
-    print(f"Found {len(all_movies)} listings, {len(new)} new.")
+    print(f"Found {len(all_movies)} listings, {len(new)} new, {len(failed)} failed to send.")
     with open(FILE, "w") as f:
-        json.dump(sorted(seen | set(all_movies)), f, indent=2)
+        json.dump(sorted((seen | set(all_movies)) - failed), f, indent=2)
+    if failed:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
