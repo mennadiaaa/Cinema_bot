@@ -50,14 +50,13 @@ def fetch_movies():
             slug = href.rstrip("/").split("/")[-1]
             if slug in IGNORE_SLUGS:
                 continue
-            name = (
-                a.get("title")
-                or a.get_text(" ", strip=True)
-                or slug.replace("-", " ").title()
-            )
             url = urljoin(BASE, href)
-            if url not in movies or len(name) > len(movies[url]):
-                movies[url] = name
+            img = a.find("img")
+            alt = (img.get("alt") or "") if img else ""
+            if alt.startswith("Movie poster for "):
+                movies[url] = alt[len("Movie poster for "):]
+            elif url not in movies:
+                movies[url] = slug.replace("-", " ").title()
     return movies
 
 
