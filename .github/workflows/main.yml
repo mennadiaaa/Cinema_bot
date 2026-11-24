@@ -17,13 +17,9 @@ jobs:
       - run: python check.py
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-      - run: python check_vox.py || true
-        env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       - run: |
           git config user.name bot
           git config user.email bot@users.noreply.github.com
           git add seen.json
-          git add vox_seen.json || true
           git commit -m update || true
           git push || true
