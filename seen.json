@@ -66,10 +66,8 @@
     ],
     "name": "Crypto",
     "shows": [
-      "6b05fa19807cb7bca012073f",
-      "6b05fa19807cb7bca0120740",
-      "6b05fa19807cb7bca0120741",
-      "6b05fa19807cb7bca0120743"
+      "6b05fa19807cb7bca0120743",
+      "6b08a8d6807cb7bca0141d93"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/dune-part-three.html": {
@@ -103,9 +101,6 @@
     ],
     "name": "Ebenezer",
     "shows": [
-      "6b05fbcc807cb7bca01209ab",
-      "6b05fbcc807cb7bca01209ac",
-      "6b05fbcc807cb7bca01209ad",
       "6b05fbcc807cb7bca01209af"
     ]
   },
@@ -121,13 +116,6 @@
     ],
     "name": "Focker In-Law",
     "shows": [
-      "6b05faeb807cb7bca012082b",
-      "6b05faeb807cb7bca012082c",
-      "6b05faeb807cb7bca012082d",
-      "6b05faeb807cb7bca012082e",
-      "6b05fc5f807cb7bca0120a9a",
-      "6b05fc5f807cb7bca0120a9c",
-      "6b05fc5f807cb7bca0120a9d",
       "6b05fc9f807cb7bca0120b27"
     ]
   },
@@ -157,24 +145,14 @@
     ],
     "name": "Hadoota",
     "shows": [
-      "6b05fb23807cb7bca0120892",
-      "6b05fb23807cb7bca0120893",
       "6b05fb23807cb7bca0120895",
-      "6b05fb23807cb7bca0120896",
       "6b05fc00807cb7bca0120a24",
-      "6b05fc00807cb7bca0120a26",
-      "6b05fc00807cb7bca0120a27",
-      "6b05fc00807cb7bca0120a28",
-      "6b05fc20807cb7bca0120a50",
       "6b05fc20807cb7bca0120a52",
-      "6b05fc20807cb7bca0120a54",
-      "6b05fc20807cb7bca0120a55",
-      "6b05fcb7807cb7bca0120b37",
-      "6b05fcb7807cb7bca0120b38",
-      "6b07f069807cb7bca0131c7e",
-      "6b08037b807cb7bca01326ab",
-      "6b082688807cb7bca0134694",
-      "6b0829e6807cb7bca0134a3c"
+      "6b088f90807cb7bca013fcd6",
+      "6b089c4b807cb7bca0140cc0",
+      "6b089dc1807cb7bca0140ecc",
+      "6b08a613807cb7bca0141985",
+      "6b08aca1807cb7bca0142238"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/heart-of-the-beast.html": {
@@ -197,10 +175,7 @@
       "02-12-2026"
     ],
     "name": "Hexed Arabic",
-    "shows": [
-      "6b05fb84807cb7bca012091e",
-      "6b05fb84807cb7bca012091f"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/hexed.html": {
     "dates": [
@@ -213,10 +188,7 @@
       "02-12-2026"
     ],
     "name": "Hexed",
-    "shows": [
-      "6b05f9f1807cb7bca01206e8",
-      "6b05f9f1807cb7bca01206e9"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/how-to-rob-a-bank.html": {
     "dates": [
@@ -239,9 +211,7 @@
       "02-12-2026"
     ],
     "name": "I Play Rocky",
-    "shows": [
-      "6b05fa83807cb7bca01207c4"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/lela-bazit-khalis-arabic.html": {
     "dates": [
@@ -255,16 +225,7 @@
     ],
     "name": "Leila Bazet Khales",
     "shows": [
-      "6b05fbac807cb7bca0120959",
-      "6b05fbac807cb7bca012095a",
-      "6b05fbac807cb7bca012095b",
-      "6b05fbac807cb7bca012095c",
-      "6b05fbac807cb7bca012095d",
-      "6b05fc8f807cb7bca0120aee",
-      "6b05fc8f807cb7bca0120aef",
-      "6b05fc8f807cb7bca0120af0",
-      "6b05fc8f807cb7bca0120af1",
-      "6b05fc8f807cb7bca0120af2"
+      "6b05fbac807cb7bca012095d"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/matloub-aelyan.html": {
@@ -279,12 +240,7 @@
     ],
     "name": "Matloub Aelyan",
     "shows": [
-      "6b05fb08807cb7bca0120861",
-      "6b05fb08807cb7bca0120862",
-      "6b05fb08807cb7bca0120863",
-      "6b05fb08807cb7bca0120865",
-      "6b082666807cb7bca0134678",
-      "6b0829ca807cb7bca0134a1a"
+      "6b05fb08807cb7bca0120865"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/paper-tiger.html": {
@@ -298,10 +254,7 @@
       "02-12-2026"
     ],
     "name": "Paper Tiger",
-    "shows": [
-      "6b05fa4a807cb7bca012078e",
-      "6b05fa4a807cb7bca012078f"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/resident_evil.html": {
     "dates": [
@@ -324,8 +277,6 @@
     ],
     "name": "Sophia",
     "shows": [
-      "6b05fb9a807cb7bca0120939",
-      "6b05fb9a807cb7bca012093a",
       "6b05fb9a807cb7bca012093b"
     ]
   },
@@ -340,10 +291,7 @@
       "02-12-2026"
     ],
     "name": "The Cat In The Hat -Arabic DUB",
-    "shows": [
-      "6b05fb4e807cb7bca01208c5",
-      "6b05fb4e807cb7bca01208c6"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/the-cat-in-the-hat.html": {
     "dates": [
@@ -364,10 +312,8 @@
     ],
     "name": "The Hunger Games: Sunrise on the Reaping",
     "shows": [
-      "6b05f99a807cb7bca012068a",
-      "6b05f99a807cb7bca012068b",
       "6b05fa01807cb7bca012070c",
-      "6b05fa01807cb7bca012070d"
+      "6b08707d807cb7bca013c1ef"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/wala-kan-ala-albal.html": {
@@ -381,10 +327,7 @@
       "02-12-2026"
     ],
     "name": "Wala Kan Ala Albal",
-    "shows": [
-      "6b05fab6807cb7bca01207f2",
-      "6b05fab6807cb7bca01207f4"
-    ]
+    "shows": []
   },
   "https://cfc.scenecinemas.com/movie-details/you-can-see-everything.html": {
     "dates": [
@@ -397,10 +340,7 @@
       "02-12-2026"
     ],
     "name": "You Can See Everything",
-    "shows": [
-      "6b05fbee807cb7bca01209f5",
-      "6b05fbee807cb7bca01209f6"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/avengers-doomsday-infinity-vision-sx-4dx.html": {
     "dates": [
@@ -430,7 +370,6 @@
     ],
     "name": "Clayface",
     "shows": [
-      "6b062bfc475a2207de0dec82",
       "6b062bfc475a2207de0dec84"
     ]
   },
@@ -446,7 +385,6 @@
     ],
     "name": "Crypto",
     "shows": [
-      "6b062a2e475a2207de0deb42",
       "6b062a2e475a2207de0deb43"
     ]
   },
@@ -482,9 +420,7 @@
     ],
     "name": "Ebenezer",
     "shows": [
-      "6b062a91475a2207de0deb92",
-      "6b062a91475a2207de0deb93",
-      "6b062a91475a2207de0deb94"
+      "6b062a91475a2207de0deb93"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/focker-in-law.html": {
@@ -497,12 +433,7 @@
       "01-12-2026"
     ],
     "name": "Focker In-Law",
-    "shows": [
-      "6b062802475a2207de0de9bc",
-      "6b062802475a2207de0de9bd",
-      "6b062802475a2207de0de9c0",
-      "6b062802475a2207de0de9c1"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/forgotten-island.html": {
     "dates": [
@@ -528,19 +459,9 @@
     ],
     "name": "Hadoota",
     "shows": [
-      "6b0627b6475a2207de0de97a",
-      "6b0627b6475a2207de0de97b",
-      "6b0627b6475a2207de0de97c",
-      "6b06284c475a2207de0de9f8",
-      "6b06284c475a2207de0de9f9",
-      "6b06284c475a2207de0de9fa",
       "6b06284c475a2207de0de9fc",
-      "6b06287b475a2207de0dea35",
-      "6b06287b475a2207de0dea37",
-      "6b06287b475a2207de0dea38",
-      "6b06287b475a2207de0dea39",
       "6b062977475a2207de0deac9",
-      "6b062977475a2207de0deaca"
+      "6b088487475a2207de0f34d4"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/hexed.html": {
@@ -554,10 +475,7 @@
       "02-12-2026"
     ],
     "name": "Hexed",
-    "shows": [
-      "6b062abf475a2207de0debae",
-      "6b062abf475a2207de0debaf"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/how_to_rob_a_bank.html": {
     "dates": [
@@ -578,8 +496,6 @@
     ],
     "name": "I Play Rocky",
     "shows": [
-      "6b062b6d475a2207de0dec07",
-      "6b062b6d475a2207de0dec08",
       "6b062b6d475a2207de0dec0a"
     ]
   },
@@ -595,15 +511,6 @@
     ],
     "name": "Leila Bazet Khales",
     "shows": [
-      "6b062708475a2207de0de912",
-      "6b062708475a2207de0de913",
-      "6b062708475a2207de0de914",
-      "6b062708475a2207de0de915",
-      "6b062708475a2207de0de916",
-      "6b0629bc475a2207de0deae7",
-      "6b0629bc475a2207de0deae8",
-      "6b0629bc475a2207de0deae9",
-      "6b0629bc475a2207de0deaea",
       "6b0629bc475a2207de0deaeb"
     ]
   },
@@ -618,10 +525,7 @@
       "02-12-2026"
     ],
     "name": "Matloub Aelyan",
-    "shows": [
-      "6b062b45475a2207de0debef",
-      "6b062b45475a2207de0debf0"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/sophia-arabic.html": {
     "dates": [
@@ -634,10 +538,7 @@
       "02-12-2026"
     ],
     "name": "Sophia",
-    "shows": [
-      "6b062b92475a2207de0dec39",
-      "6b062b92475a2207de0dec3a"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/the-cat-in-the-hat.html": {
     "dates": [
@@ -650,10 +551,7 @@
       "02-12-2026"
     ],
     "name": "The Cat In The Hat",
-    "shows": [
-      "6b062a6a475a2207de0deb6c",
-      "6b062a6a475a2207de0deb6d"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html": {
     "dates": [
@@ -666,9 +564,7 @@
       "02-12-2026"
     ],
     "name": "The Hunger Games: Sunrise on the Reaping",
-    "shows": [
-      "6b062957475a2207de0deaa0"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html": {
     "dates": [
@@ -681,11 +577,7 @@
       "02-12-2026"
     ],
     "name": "Wala Kan Ala Albal",
-    "shows": [
-      "6b062a06475a2207de0deb1a",
-      "6b062a06475a2207de0deb1b",
-      "6b062a06475a2207de0deb1c"
-    ]
+    "shows": []
   },
   "https://district5.scenecinemas.com/movie-details/you-can-see-everything.html": {
     "dates": [
@@ -698,9 +590,7 @@
     ],
     "name": "You Can See Everything",
     "shows": [
-      "6b062761475a2207de0de949",
-      "6b062761475a2207de0de94b",
-      "6b062761475a2207de0de94c"
+      "6b062761475a2207de0de949"
     ]
   }
 }
