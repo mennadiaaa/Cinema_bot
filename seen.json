@@ -20,9 +20,7 @@
       "6af89d6b807cb7bca007db01",
       "6af89d6b807cb7bca007db02",
       "6af89d6b807cb7bca007db03",
-      "6af89dd1807cb7bca007dc2f",
       "6af89dd1807cb7bca007dc30",
-      "6af89dd1807cb7bca007dc31",
       "6af89dd1807cb7bca007dc32",
       "6af89dd1807cb7bca007dc33"
     ]
@@ -43,7 +41,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/clayface.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -52,11 +49,12 @@
       "02-12-2026"
     ],
     "name": "Clayface",
-    "shows": []
+    "shows": [
+      "6b05fa62807cb7bca01207a9"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/crypto-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -66,8 +64,11 @@
     ],
     "name": "Crypto",
     "shows": [
-      "6b05fa19807cb7bca0120743",
-      "6b08a8d6807cb7bca0141d93"
+      "6b05fa19807cb7bca0120744",
+      "6b05fa19807cb7bca0120745",
+      "6b05fa19807cb7bca0120746",
+      "6b05fa19807cb7bca0120747",
+      "6b05fa19807cb7bca0120748"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/dune-part-three.html": {
@@ -91,7 +92,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/ebenezer.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -101,12 +101,16 @@
     ],
     "name": "Ebenezer",
     "shows": [
-      "6b05fbcc807cb7bca01209af"
+      "6b05fbcc807cb7bca01209b0",
+      "6b05fbcc807cb7bca01209b1",
+      "6b05fbcc807cb7bca01209b2",
+      "6b05fbcc807cb7bca01209b3",
+      "6b05fbcc807cb7bca01209b4",
+      "6b05fbcc807cb7bca01209b5"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/focker-in-law.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -116,7 +120,17 @@
     ],
     "name": "Focker In-Law",
     "shows": [
-      "6b05fc9f807cb7bca0120b27"
+      "6b05faeb807cb7bca0120830",
+      "6b05faeb807cb7bca0120831",
+      "6b05faeb807cb7bca0120832",
+      "6b05faeb807cb7bca0120833",
+      "6b05faeb807cb7bca0120834",
+      "6b05faeb807cb7bca0120835",
+      "6b05fc5f807cb7bca0120aa1",
+      "6b05fc5f807cb7bca0120aa3",
+      "6b05fc5f807cb7bca0120aa4",
+      "6b05fc5f807cb7bca0120aa6",
+      "6b05fc9f807cb7bca0120b28"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/forgotten-island.html": {
@@ -135,7 +149,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/hadoota-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -145,14 +158,30 @@
     ],
     "name": "Hadoota",
     "shows": [
-      "6b05fb23807cb7bca0120895",
-      "6b05fc00807cb7bca0120a24",
-      "6b05fc20807cb7bca0120a52",
-      "6b088f90807cb7bca013fcd6",
-      "6b089c4b807cb7bca0140cc0",
-      "6b089dc1807cb7bca0140ecc",
-      "6b08a613807cb7bca0141985",
-      "6b08aca1807cb7bca0142238"
+      "6b05fb23807cb7bca0120897",
+      "6b05fb23807cb7bca0120898",
+      "6b05fb23807cb7bca0120899",
+      "6b05fb23807cb7bca012089a",
+      "6b05fb23807cb7bca012089b",
+      "6b05fb23807cb7bca012089c",
+      "6b05fc00807cb7bca0120a29",
+      "6b05fc00807cb7bca0120a2a",
+      "6b05fc00807cb7bca0120a2b",
+      "6b05fc00807cb7bca0120a2c",
+      "6b05fc00807cb7bca0120a2d",
+      "6b05fc20807cb7bca0120a56",
+      "6b05fc20807cb7bca0120a57",
+      "6b05fc20807cb7bca0120a58",
+      "6b05fc20807cb7bca0120a59",
+      "6b05fc20807cb7bca0120a5a",
+      "6b05fc20807cb7bca0120a5b",
+      "6b05fcb7807cb7bca0120b3b",
+      "6b05fcb7807cb7bca0120b3c",
+      "6b05fcb7807cb7bca0120b3e",
+      "6b05fcb7807cb7bca0120b3f",
+      "6b07f079807cb7bca0131c85",
+      "6b087694807cb7bca013ce0e",
+      "6b08baa7807cb7bca0143032"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/heart-of-the-beast.html": {
@@ -166,7 +195,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/hexed-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -175,11 +203,15 @@
       "02-12-2026"
     ],
     "name": "Hexed Arabic",
-    "shows": []
+    "shows": [
+      "6b05fb84807cb7bca0120920",
+      "6b05fb84807cb7bca0120921",
+      "6b05fb84807cb7bca0120922",
+      "6b05fb84807cb7bca0120923"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/hexed.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -188,7 +220,12 @@
       "02-12-2026"
     ],
     "name": "Hexed",
-    "shows": []
+    "shows": [
+      "6b05f9f1807cb7bca01206ea",
+      "6b05f9f1807cb7bca01206eb",
+      "6b05f9f1807cb7bca01206ec",
+      "6b05f9f1807cb7bca01206ed"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/how-to-rob-a-bank.html": {
     "dates": [
@@ -202,7 +239,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/i-play-rocky.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -211,11 +247,14 @@
       "02-12-2026"
     ],
     "name": "I Play Rocky",
-    "shows": []
+    "shows": [
+      "6b05fa83807cb7bca01207c6",
+      "6b05fa83807cb7bca01207c8",
+      "6b0876a7807cb7bca013ce2a"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/lela-bazit-khalis-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -225,12 +264,24 @@
     ],
     "name": "Leila Bazet Khales",
     "shows": [
-      "6b05fbac807cb7bca012095d"
+      "6b05fbac807cb7bca012095e",
+      "6b05fbac807cb7bca012095f",
+      "6b05fbac807cb7bca0120960",
+      "6b05fbac807cb7bca0120962",
+      "6b05fbac807cb7bca0120963",
+      "6b05fbac807cb7bca0120964",
+      "6b05fbac807cb7bca0120965",
+      "6b05fc8f807cb7bca0120af4",
+      "6b05fc8f807cb7bca0120af5",
+      "6b05fc8f807cb7bca0120af6",
+      "6b05fc8f807cb7bca0120af7",
+      "6b05fc8f807cb7bca0120af8",
+      "6b05fc8f807cb7bca0120af9",
+      "6b05fc8f807cb7bca0120afa"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/matloub-aelyan.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -240,12 +291,20 @@
     ],
     "name": "Matloub Aelyan",
     "shows": [
-      "6b05fb08807cb7bca0120865"
+      "6b05fb08807cb7bca0120866",
+      "6b05fb08807cb7bca0120867",
+      "6b05fb08807cb7bca0120868",
+      "6b05fb08807cb7bca0120869",
+      "6b05fb08807cb7bca012086a",
+      "6b05fb08807cb7bca012086b",
+      "6b05fb08807cb7bca012086c",
+      "6b05fced807cb7bca0120b7f",
+      "6b05fced807cb7bca0120b80",
+      "6b05fced807cb7bca0120b81"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/paper-tiger.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -254,7 +313,10 @@
       "02-12-2026"
     ],
     "name": "Paper Tiger",
-    "shows": []
+    "shows": [
+      "6b05fa4a807cb7bca0120790",
+      "6b05fa4a807cb7bca0120791"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/resident_evil.html": {
     "dates": [
@@ -267,7 +329,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/sophia-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -277,12 +338,13 @@
     ],
     "name": "Sophia",
     "shows": [
-      "6b05fb9a807cb7bca012093b"
+      "6b05fb9a807cb7bca012093c",
+      "6b05fb9a807cb7bca012093d",
+      "6b05fb9a807cb7bca012093e"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/the-cat-in-the-hat-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -291,7 +353,12 @@
       "02-12-2026"
     ],
     "name": "The Cat In The Hat -Arabic DUB",
-    "shows": []
+    "shows": [
+      "6b05fb4e807cb7bca01208c7",
+      "6b05fb4e807cb7bca01208c8",
+      "6b05fb4e807cb7bca01208c9",
+      "6b05fb4e807cb7bca01208ca"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/the-cat-in-the-hat.html": {
     "dates": [
@@ -302,7 +369,6 @@
   },
   "https://cfc.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -312,13 +378,16 @@
     ],
     "name": "The Hunger Games: Sunrise on the Reaping",
     "shows": [
-      "6b05fa01807cb7bca012070c",
-      "6b08707d807cb7bca013c1ef"
+      "6b05f99a807cb7bca012068d",
+      "6b05f99a807cb7bca012068f",
+      "6b05f99a807cb7bca0120690",
+      "6b05f99a807cb7bca0120691",
+      "6b05fa01807cb7bca012070e",
+      "6b05fa01807cb7bca012070f"
     ]
   },
   "https://cfc.scenecinemas.com/movie-details/wala-kan-ala-albal.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -327,11 +396,15 @@
       "02-12-2026"
     ],
     "name": "Wala Kan Ala Albal",
-    "shows": []
+    "shows": [
+      "6b05fab6807cb7bca01207f6",
+      "6b05fab6807cb7bca01207f7",
+      "6b05fab6807cb7bca01207f9",
+      "6b05fab6807cb7bca01207fb"
+    ]
   },
   "https://cfc.scenecinemas.com/movie-details/you-can-see-everything.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -340,7 +413,12 @@
       "02-12-2026"
     ],
     "name": "You Can See Everything",
-    "shows": []
+    "shows": [
+      "6b05fbee807cb7bca01209f7",
+      "6b05fbee807cb7bca01209f9",
+      "6b05fbee807cb7bca01209fa",
+      "6b05fbee807cb7bca01209fb"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/avengers-doomsday-infinity-vision-sx-4dx.html": {
     "dates": [
@@ -360,7 +438,6 @@
   },
   "https://district5.scenecinemas.com/movie-details/clayface.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -370,12 +447,13 @@
     ],
     "name": "Clayface",
     "shows": [
-      "6b062bfc475a2207de0dec84"
+      "6b062bfc475a2207de0dec85",
+      "6b062bfc475a2207de0dec86",
+      "6b062bfc475a2207de0dec87"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/crypto-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -385,7 +463,9 @@
     ],
     "name": "Crypto",
     "shows": [
-      "6b062a2e475a2207de0deb43"
+      "6b062a2e475a2207de0deb44",
+      "6b062a2e475a2207de0deb45",
+      "6b062a2e475a2207de0deb46"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/dune-part-three.html": {
@@ -410,7 +490,6 @@
   },
   "https://district5.scenecinemas.com/movie-details/ebenezer.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -420,12 +499,13 @@
     ],
     "name": "Ebenezer",
     "shows": [
-      "6b062a91475a2207de0deb93"
+      "6b062a91475a2207de0deb95",
+      "6b062a91475a2207de0deb96",
+      "6b062a91475a2207de0deb97"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/focker-in-law.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -433,7 +513,15 @@
       "01-12-2026"
     ],
     "name": "Focker In-Law",
-    "shows": []
+    "shows": [
+      "6b062802475a2207de0de9c2",
+      "6b062802475a2207de0de9c3",
+      "6b062802475a2207de0de9c4",
+      "6b062802475a2207de0de9c5",
+      "6b062802475a2207de0de9c6",
+      "6b062802475a2207de0de9c7",
+      "6b062802475a2207de0de9c8"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/forgotten-island.html": {
     "dates": [
@@ -449,7 +537,6 @@
   },
   "https://district5.scenecinemas.com/movie-details/hadoota-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -459,14 +546,25 @@
     ],
     "name": "Hadoota",
     "shows": [
-      "6b06284c475a2207de0de9fc",
-      "6b062977475a2207de0deac9",
-      "6b088487475a2207de0f34d4"
+      "6b0627b6475a2207de0de97e",
+      "6b0627b6475a2207de0de97f",
+      "6b06284c475a2207de0de9fd",
+      "6b06284c475a2207de0de9fe",
+      "6b06284c475a2207de0de9ff",
+      "6b06284c475a2207de0dea00",
+      "6b06284c475a2207de0dea01",
+      "6b06284c475a2207de0dea02",
+      "6b06287b475a2207de0dea3a",
+      "6b06287b475a2207de0dea3b",
+      "6b06287b475a2207de0dea3c",
+      "6b06287b475a2207de0dea3d",
+      "6b06287b475a2207de0dea3e",
+      "6b062977475a2207de0deacb",
+      "6b062977475a2207de0deacc"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/hexed.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -475,7 +573,12 @@
       "02-12-2026"
     ],
     "name": "Hexed",
-    "shows": []
+    "shows": [
+      "6b062abf475a2207de0debb0",
+      "6b062abf475a2207de0debb1",
+      "6b062abf475a2207de0debb2",
+      "6b062abf475a2207de0debb3"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/how_to_rob_a_bank.html": {
     "dates": [
@@ -486,7 +589,6 @@
   },
   "https://district5.scenecinemas.com/movie-details/i-play-rocky.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -496,12 +598,15 @@
     ],
     "name": "I Play Rocky",
     "shows": [
-      "6b062b6d475a2207de0dec0a"
+      "6b062b6d475a2207de0dec0b",
+      "6b062b6d475a2207de0dec0c",
+      "6b062b6d475a2207de0dec0d",
+      "6b062b6d475a2207de0dec0e",
+      "6b062b6d475a2207de0dec0f"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/lela-bazit-khalis-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -511,12 +616,24 @@
     ],
     "name": "Leila Bazet Khales",
     "shows": [
-      "6b0629bc475a2207de0deaeb"
+      "6b062708475a2207de0de918",
+      "6b062708475a2207de0de919",
+      "6b062708475a2207de0de91a",
+      "6b062708475a2207de0de91b",
+      "6b062708475a2207de0de91c",
+      "6b062708475a2207de0de91d",
+      "6b062708475a2207de0de91e",
+      "6b0629bc475a2207de0deaec",
+      "6b0629bc475a2207de0deaed",
+      "6b0629bc475a2207de0deaee",
+      "6b0629bc475a2207de0deaef",
+      "6b0629bc475a2207de0deaf0",
+      "6b0629bc475a2207de0deaf1",
+      "6b0629bc475a2207de0deaf2"
     ]
   },
   "https://district5.scenecinemas.com/movie-details/matloub-aelyan.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -525,11 +642,14 @@
       "02-12-2026"
     ],
     "name": "Matloub Aelyan",
-    "shows": []
+    "shows": [
+      "6b062b45475a2207de0debf2",
+      "6b062b45475a2207de0debf3",
+      "6b062b45475a2207de0debf4"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/sophia-arabic.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -538,11 +658,14 @@
       "02-12-2026"
     ],
     "name": "Sophia",
-    "shows": []
+    "shows": [
+      "6b062b92475a2207de0dec3b",
+      "6b062b92475a2207de0dec3c",
+      "6b062b92475a2207de0dec3d"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/the-cat-in-the-hat.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -551,11 +674,15 @@
       "02-12-2026"
     ],
     "name": "The Cat In The Hat",
-    "shows": []
+    "shows": [
+      "6b062a6a475a2207de0deb6f",
+      "6b062a6a475a2207de0deb70",
+      "6b062a6a475a2207de0deb71",
+      "6b062a6a475a2207de0deb72"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -564,11 +691,14 @@
       "02-12-2026"
     ],
     "name": "The Hunger Games: Sunrise on the Reaping",
-    "shows": []
+    "shows": [
+      "6b062957475a2207de0deaa1",
+      "6b062957475a2207de0deaa2",
+      "6b062957475a2207de0deaa3"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -577,11 +707,15 @@
       "02-12-2026"
     ],
     "name": "Wala Kan Ala Albal",
-    "shows": []
+    "shows": [
+      "6b062a06475a2207de0deb1d",
+      "6b062a06475a2207de0deb1e",
+      "6b062a06475a2207de0deb1f",
+      "6b062a06475a2207de0deb20"
+    ]
   },
   "https://district5.scenecinemas.com/movie-details/you-can-see-everything.html": {
     "dates": [
-      "26-11-2026",
       "27-11-2026",
       "28-11-2026",
       "29-11-2026",
@@ -590,7 +724,11 @@
     ],
     "name": "You Can See Everything",
     "shows": [
-      "6b062761475a2207de0de949"
+      "6b062761475a2207de0de94d",
+      "6b062761475a2207de0de94e",
+      "6b062761475a2207de0de94f",
+      "6b062761475a2207de0de950",
+      "6b062761475a2207de0de951"
     ]
   }
 }
